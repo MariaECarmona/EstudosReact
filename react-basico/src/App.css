@@ -1,0 +1,42 @@
+.App{
+  padding: 0;
+}
+
+header{
+  background-color: var(--roxo);
+  padding: 1rem 1.5rem;
+  color: var(--branco);
+  margin-bottom: 2rem;
+}
+
+form{
+  background-color: var(--amarelo);
+  margin: 0;
+  padding: 2rem 10vw;
+}
+
+form input[type="text"]{
+  width: 77.4vw;
+  border: 0;
+  border-radius: 3rem;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.5rem;
+}
+
+form textarea{
+  width: 77vw;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin: 0.3rem;
+  padding: 0.3rem 0.5rem;
+}
+
+form button{
+  color: var(--branco);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--roxo);
+}
