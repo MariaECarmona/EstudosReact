@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import AdicionarUsuario from '../AdicionarUsuario/AdicionarUsuario';
 import Usuario  from '../Usuario/Usuario';
+
 import './Usuarios.css';
 
 
@@ -16,7 +17,7 @@ class Usuarios extends Component{
     }
 
     adicionarUsuario(usuario){
-        const usuarios = [...this.state.usuarios, usuarios];
+        const usuarios = [...this.state.usuarios, usuario];
         this.setState({ usuarios: usuarios })
     }
 
