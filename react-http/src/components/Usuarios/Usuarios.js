@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import AdicionarUsuario from '../AdicionarUsuario/AdicionarUsuario';
 import Usuario  from '../Usuario/Usuario';
+import './Usuarios.css';
+
 
 class Usuarios extends Component{
     constructor(props){
@@ -31,17 +33,18 @@ class Usuarios extends Component{
 
     render(){
         return (
-            <>
+            <div className="divUsuarios">
                 <AdicionarUsuario adicionarUsuario={this.adicionarUsuario}/>
-
-                {this.state.usuarios.map(usuario => (
-                    <Usuario 
-                        key={usuario.id}
-                        usuario={usuario}
-                        removerUsuario={this.removerUsuario.bind(this, usuario)}
-                    />
-                ))}
-            </>
+                <div className="conteudoUsuarios">
+                    {this.state.usuarios.map(usuario => (
+                        <Usuario 
+                            key={usuario.id}
+                            usuario={usuario}
+                            removerUsuario={this.removerUsuario.bind(this, usuario)}
+                        />
+                    ))}
+                </div>
+            </div>
         );
     }
 }

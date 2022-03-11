@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { HiOutlineMail } from "react-icons/hi";
+import { AiOutlineUser } from "react-icons/ai";
 
 import './AdicionarUsuario.css';
 
@@ -32,45 +34,43 @@ class AdicionarUsuario extends Component{
                 <h2>Adicionar Usuário</h2>
 
                 <form onSubmit={this.onSubmitHandler}>
-                    <div className="Linha">
-                        <div className="Coluna">
-                            <label>Nome</label>
-                            <input
-                                type="text"
-                                name="nome"
-                                value={this.state.usuario.nome}
-                                onChange={this.onChangeHandler}
-                                required>
-                            </input>
-                        </div>
+                
+                    <p> <AiOutlineUser/>
+                        <input
+                            type="text"
+                            name="nome"
+                            value={this.state.usuario.nome}
+                            onChange={this.onChangeHandler}
+                            placeholder="NOME"
+                            required>
+                        </input> 
+                    </p>
 
-                        <div className="Coluna">
-                            <label>Srobenome</label>
-                            <input
-                                type="text"
-                                name="sobrenome"
-                                value={this.state.usuario.sobrenome}
-                                onChange={this.onChangeHandler}
-                                required>
-                            </input>
-                        </div>
-                    </div>
-                    <div className="Linha">
-                        <div className="Coluna">
-                            <label>Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                value={this.state.usuario.email}
-                                onChange={this.onChangeHandler}
-                                required>
-                            </input>
-                        </div>
+                    <p> <AiOutlineUser/>
+                        <input
+                            type="text"
+                            name="sobrenome"
+                            value={this.state.usuario.sobrenome}
+                            onChange={this.onChangeHandler}
+                            placeholder="SOBRENOME"
+                            required>
+                        </input>
+                    </p>
 
-                        <button type="submit">
-                            Adicionar
-                        </button>
-                    </div>
+                    <p> <HiOutlineMail/>
+                        <input
+                            type="email"
+                            name="email"
+                            value={this.state.usuario.email}
+                            onChange={this.onChangeHandler}
+                            placeholder="EMAIL"
+                            required>
+                        </input>
+                    </p>
+
+                    <button type="submit">
+                        Adicionar
+                    </button>
                 </form>
             </div>
         );
