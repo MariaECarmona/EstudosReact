@@ -58,7 +58,7 @@ class App extends Component{
     return (
       <div className="App">
         <header>
-          <h1>Meu projeto</h1>
+          <h1>React Básico: Comentários</h1>
         </header>
         {this.state.comentarios.map((comentario, indice) => (
           <Comentario 
