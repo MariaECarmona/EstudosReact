@@ -1,0 +1,12 @@
+.App{
+  padding: 0;
+}
+
+header{
+  background-color: var(--roxo);
+  padding: 1rem 1.5rem;
+  color: var(--branco);
+  margin-bottom: 2rem;
+}
+
+

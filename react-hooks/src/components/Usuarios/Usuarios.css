@@ -1,0 +1,10 @@
+div.divUsuarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+div.conteudoUsuarios{
+    margin-right: 5rem;
+}

@@ -1,0 +1,36 @@
+.Usuario {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width:30rem;
+  box-shadow: 0.5rem 0.5rem 1rem var(--cinza-claro);
+  padding: 1rem;
+}
+
+.Usuario div{
+  width: 20rem;
+}
+
+.Usuario div p.nomeUsuario{
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.Usuario p.iconeUsuario{
+  color: var(--amarelo);
+  font-size: 2.5rem;
+  margin: 0;
+  margin-right: 0.3rem;
+}
+ 
+.Usuario button{
+    color: var(--roxo);
+    background-color: var(--branco);
+    border: 0;
+    font-size: 1.5rem;
+    height: 1.5rem;
+
+    margin: 0;
+    padding: 0;
+}
